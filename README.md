@@ -1,2 +1,2 @@
 # Lucian Blaga Site (Proiect TIC)
- Proiect TIC: Site despre Lucian Blaga
+Vizitează site: https://andy0dvlpr.github.io/Proiect-TIC-LucianBlaga-Site/
