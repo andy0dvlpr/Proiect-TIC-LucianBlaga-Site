@@ -11,6 +11,16 @@ p
     font-family: NotoSerif-Regular;
 }
 
+a
+{
+    color: #339933;
+}
+
+a:hover
+{
+    color: #f60;
+}
+
 #pagetitle
 {
     font-family: NotoSerif-Regular;
@@ -29,9 +39,14 @@ p
     padding-top: 0;
 }
 
+#githublink
+{
+    text-align: center;
+}
+
 #LBportretcolt
 {
-    position: absolute;
+    position: fixed;
     right: 20px;
     bottom: 20px;
 }
