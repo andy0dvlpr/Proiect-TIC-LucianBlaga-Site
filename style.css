@@ -1,11 +1,62 @@
-body {
+body
+{
     background: #f0f0f0;
 }
 
-.contentdiv
+/* Font-uri */
+@font-face {font-family: NotoSerif-Regular; src: url("fonts/Noto_Serif/NotoSerif-Regular.ttf");}
+
+p
+{
+    font-family: NotoSerif-Regular;
+}
+
+#pagetitle
+{
+    font-family: NotoSerif-Regular;
+    color: #8c0404;
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+}
+
+#pagesubtitle
+{
+    font-family: NotoSerif-Regular;
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding-top: 0;
+}
+
+#LBportretcolt
+{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+#LBsemnaturajosdiv
+{
+    text-align: center;
+}
+
+#LBsemnaturajos
+{
+    width: 139px;
+    height: 33px;
+}
+
+#contentdiv
 {
     background: #fff;
     margin: auto;
     padding: 30px;
     width: 1300px;
+}
+
+/* Foloseste pe tag-uri <a> pentru a scoate sublinierea. */
+.removeunderlinefromlink
+{
+    text-decoration: none;
 }
