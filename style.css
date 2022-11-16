@@ -1,0 +1,11 @@
+body {
+    background: #f0f0f0;
+}
+
+.contentdiv
+{
+    background: #fff;
+    margin: auto;
+    padding: 30px;
+    width: 1300px;
+}
