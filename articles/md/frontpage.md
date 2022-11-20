@@ -1,0 +1,3 @@
+Lucian Blaga (n. 1895 - d. 1961) a fost un filozof, poet, dramaturg, traducător, jurnalist, profesor universitar, academician şi diplomat român. Acesta este cunoscut cel mai bine pentru operele sale poetice care au adus și reinterpretat noțiunile de expresionism și modernism în spațiul românesc.
+
+Între anii 1916 și 1920, a studiat filosofia și biologia la Universitatea din Viena. Acolo, el a descoperit curentul literar ce va ajunge mai târziu să îl definească.

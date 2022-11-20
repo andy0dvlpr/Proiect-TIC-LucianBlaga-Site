@@ -51,7 +51,7 @@ a:hover
     bottom: 20px;
 }
 
-#LBsemnaturajosdiv
+.imgcenter
 {
     text-align: center;
 }
@@ -67,7 +67,16 @@ a:hover
     background: #fff;
     margin: auto;
     padding: 30px;
-    width: 1300px;
+    /*width: 1300px;*/
+}
+
+/* Daca latimea ecranului dispozitivului este mai mare de 1300px, aplica urmatoarele: */
+@media (min-width: 1300px)
+{
+    #contentdiv
+    {
+        width: 1300px;
+    }
 }
 
 /* Foloseste pe tag-uri <a> pentru a scoate sublinierea. */
