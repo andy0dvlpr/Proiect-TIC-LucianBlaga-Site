@@ -79,6 +79,16 @@ a:hover
     }
 }
 
+/* Daca latimea ecranului dispozitivului este mai mica de 1300px, aplica urmatoarele: */
+@media (max-width: 1300px)
+{
+    #LBportretcolt
+    {
+        /* Pe ecrane mici, portretul de colt intra peste continut. */
+        display: none;
+    }
+}
+
 /* Foloseste pe tag-uri <a> pentru a scoate sublinierea. */
 .removeunderlinefromlink
 {
