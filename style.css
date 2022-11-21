@@ -5,6 +5,7 @@ body
 
 /* Font-uri */
 @font-face {font-family: NotoSerif-Regular; src: url("fonts/Noto_Serif/NotoSerif-Regular.ttf");}
+@font-face {font-family: Roboto-Regular; src: url(fonts/Roboto/Roboto-Regular.ttf);}
 
 p
 {
@@ -39,6 +40,68 @@ a:hover
     padding-top: 0;
 }
 
+#H-navbar-table
+{
+    width: 100%;
+    table-layout: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: #8c0404;
+}
+
+.H-navbar-td
+{
+    text-align: center;
+}
+
+.H-navbar-a
+{
+    color: white;
+    text-decoration: none;
+    font-family: Roboto-Regular;
+    position: relative;
+}
+
+.H-navbar-a:hover
+{
+    color: white;
+}
+
+.H-navbar-a::after
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.H-navbar-a:hover::after
+{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#S-navbar-table
+{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: #8c0404;
+}
+
+.S-navbar-td
+{
+    padding: 5px;
+}
+
 #githublink
 {
     text-align: center;
@@ -67,7 +130,6 @@ a:hover
     background: #fff;
     margin: auto;
     padding: 30px;
-    /*width: 1300px;*/
 }
 
 /* Daca latimea ecranului dispozitivului este mai mare de 1300px, aplica urmatoarele: */
@@ -77,6 +139,11 @@ a:hover
     {
         width: 1300px;
     }
+
+    #S-navbar-table
+    {
+        display: none;
+    }
 }
 
 /* Daca latimea ecranului dispozitivului este mai mica de 1300px, aplica urmatoarele: */
@@ -85,6 +152,11 @@ a:hover
     #LBportretcolt
     {
         /* Pe ecrane mici, portretul de colt intra peste continut. */
+        display: none;
+    }
+
+    #H-navbar-table
+    {
         display: none;
     }
 }
