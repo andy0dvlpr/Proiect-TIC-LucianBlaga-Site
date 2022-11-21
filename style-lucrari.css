@@ -1,0 +1,16 @@
+@font-face {font-family: NotoSerif-Regular; src: url("fonts/Noto_Serif/NotoSerif-Regular.ttf");}
+
+h1
+{
+    font-family: NotoSerif-Regular;
+}
+
+li
+{
+    font-family: NotoSerif-Regular;
+}
+
+p
+{
+    font-family: NotoSerif-Regular;
+}
