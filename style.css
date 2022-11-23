@@ -4,103 +4,141 @@ body
 }
 
 /* Font-uri */
-@font-face {font-family: NotoSerif-Regular; src: url("fonts/Noto_Serif/NotoSerif-Regular.ttf");}
-@font-face {font-family: Roboto-Regular; src: url(fonts/Roboto/Roboto-Regular.ttf);}
+/*#region*/
+    @font-face {font-family: NotoSerif-Regular; src: url("fonts/Noto_Serif/NotoSerif-Regular.ttf");}
+    @font-face {font-family: Roboto-Regular; src: url(fonts/Roboto/Roboto-Regular.ttf);}
+/*#endregion*/
 
-p
-{
-    font-family: NotoSerif-Regular;
-}
+/* Elemente default */
+/*#region*/
+    p
+    {
+        font-family: NotoSerif-Regular;
+    }
 
-a
-{
-    color: #339933;
-}
+    h1
+    {
+        font-family: NotoSerif-Regular;
+    }
 
-a:hover
-{
-    color: #f60;
-}
+    li
+    {
+        font-family: NotoSerif-Regular;
+    }
 
-#pagetitle
-{
-    font-family: NotoSerif-Regular;
-    color: #8c0404;
-    text-align: center;
-    margin: 0;
-    padding-top: 10px;
-}
+    a
+    {
+        color: #339933;
+    }
 
-#pagesubtitle
-{
-    font-family: NotoSerif-Regular;
-    color: black;
-    text-align: center;
-    margin: 0;
-    padding-top: 0;
-}
+    a:hover
+    {
+        color: #f60;
+    }
 
-#H-navbar-table
-{
-    width: 100%;
-    table-layout: fixed;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    button
+    {
+        font-family: NotoSerif-Regular;
+    }
+/*#endregion*/
 
-    background-color: #8c0404;
-}
-
-.H-navbar-td
+/* Foloseste pe un div ce include o imagine pt. a o centra */
+.imgcenter
 {
     text-align: center;
 }
 
-.H-navbar-a
-{
-    color: white;
-    text-decoration: none;
-    font-family: Roboto-Regular;
-    position: relative;
-}
+/* Zona titlu*/
+/*#region*/
+    #pagetitle
+    {
+        font-family: NotoSerif-Regular;
+        color: #8c0404;
+        text-align: center;
+        margin: 0;
+        padding-top: 10px;
+    }
 
-.H-navbar-a:hover
-{
-    color: white;
-}
+    #pagesubtitle
+    {
+        font-family: NotoSerif-Regular;
+        color: black;
+        text-align: center;
+        margin: 0;
+        padding-top: 0;
+    }
+/*#endregion*/
 
-.H-navbar-a::after
-{
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: white;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-  
-.H-navbar-a:hover::after
-{
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
+/* Bara de navigatie */
+/*#region*/
+    /* Bara orizontala (desktop)*/
+    /*#region*/
+        #H-navbar-table
+        {
+            width: 100%;
+            table-layout: fixed;
+            padding-top: 10px;
+            padding-bottom: 10px;
 
-#S-navbar-table
-{
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+            background-color: #8c0404;
+        }
 
-    background-color: #8c0404;
-}
+        .H-navbar-td
+        {
+            text-align: center;
+        }
 
-.S-navbar-td
-{
-    padding: 5px;
-}
+        .H-navbar-a
+        {
+            color: white;
+            text-decoration: none;
+            font-family: Roboto-Regular;
+            position: relative;
+        }
+
+        .H-navbar-a:hover
+        {
+            color: white;
+        }
+
+        .H-navbar-a::after
+        {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: white;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        
+        .H-navbar-a:hover::after
+        {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    /*#endregion*/
+
+    /* Bara verticala (mobil) */
+    /*#region*/
+        #S-navbar-table
+        {
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            background-color: #8c0404;
+        }
+
+        .S-navbar-td
+        {
+            padding: 5px;
+        }
+    /*#endregion*/
+/*#endregion*/
 
 #githublink
 {
@@ -112,11 +150,6 @@ a:hover
     position: fixed;
     right: 20px;
     bottom: 20px;
-}
-
-.imgcenter
-{
-    text-align: center;
 }
 
 #LBsemnaturajos
